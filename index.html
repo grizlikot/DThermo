@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="mainApp">
+<html ng-app="thermoMonitoring">
     <head>
         <title>Thermometer Monitoring</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
     </head>
-    <body>
-        <div  ng-controller="HelloController">Hi {{name}}, witam</div>
-        
-        <div ng-controller="AboutController">Brought to you by {{name}}.</div>
+        <!-- CSS scripts -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
 
         <!--Angular JS Scripts -->
         <script src="js/libs/angular/angular.min.js"></script>
@@ -16,11 +15,16 @@
         
         <!-- AngularJS Application Specific Scripts -->
         <script src="app/app.js"></script>
-        <script src="app/controllers/homeController.js"></script>
-        <script src="app/controllers/aboutController.js"></script>
+        <script src="app/controllers/thermoMonitoringController.js"></script>
+        <script src="app/services/thermoMonitoringService.js"></script>
 		
-		<!-- Graphic lib -->
+		<!-- JS libs -->
 		<script src="js/libs/plotly/plotly-latest.min.js"></script>
-		
-    </body>
+        <script src="js/libs/jquery/jquery.min.js"></script> 
+        <script src="js/libs/bootstrap/bootstrap.min.js"></script> 
+
+   <body>
+    <h1>Thermometer Monitoring</h1>
+    <div ng-view=""></div>
+  </body>
 </html>
