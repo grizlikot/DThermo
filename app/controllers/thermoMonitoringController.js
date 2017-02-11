@@ -1,7 +1,7 @@
 (function(module) {
 
   var ThermoMonitoringController = function($scope, $interval, $location, $log, thermoMonitoringService) {
-    thermoMonitoringService.getTemperature($scope.user).then(onTemperature, onError);
+    thermoMonitoringService.getTemperature().then(onTemperature, onError);
 
     TESTER = document.getElementById('tester');
     Plotly.plot( TESTER, [{
