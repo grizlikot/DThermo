@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="MyApp">
+<html ng-app="mainApp">
     <head>
-        <title>AngularJS  Tutorial Series</title>
+        <title>Thermometer Monitoring</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <div  ng-controller="HelloController">Hi {{name}}, welcome to AngularJS Tutorial Series</div>
+        <div  ng-controller="HelloController">Hi {{name}}, witam</div>
         
         <div ng-controller="AboutController">Brought to you by {{name}}.</div>
 
-        <!—Angular JS Scripts -->
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-route.min.js"></script>
+        <!--Angular JS Scripts -->
+        <script src="js/libs/angular/angular.min.js"></script>
+        <script src="js/libs/angular-route/angular-route.min.js"></script>
         
         <!-- AngularJS Application Specific Scripts -->
         <script src="app/app.js"></script>
@@ -20,7 +20,7 @@
         <script src="app/controllers/aboutController.js"></script>
 		
 		<!-- Graphic lib -->
-		<script src="plotly-latest.min"></script>
+		<script src="js/libs/plotly/plotly-latest.min.js"></script>
 		
     </body>
 </html>
